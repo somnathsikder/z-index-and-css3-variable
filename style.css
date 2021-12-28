@@ -1,0 +1,42 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+/*Css3 Variable Example: */
+
+:root{
+	--primary-color:brown;
+	--secondary-color:yellow;
+}
+
+
+
+/*Z-index example:*/
+
+div{
+	width: 250px;
+	height: 250px;
+}
+
+.div1{
+	background-color: var(--primary-color);
+	position: absolute;
+	z-index: 1;
+}
+
+.div2{
+		background-color: var(--secondary-color);
+		position: absolute;
+		top: 150px;
+		left: 150px;
+}
+
+/*media screen responsive*/
+@media screen and (max-width: 600px){
+	:root{
+	--primary-color:blue;
+	--secondary-color:grey;
+	}
+}
